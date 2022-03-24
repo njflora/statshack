@@ -1,0 +1,541 @@
+body {
+    font-family: 'Open Sans', sans-serif !important;
+    margin: 0px;
+}
+
+
+:root {
+    --primaryRed: #b40404;
+    --offWhite: #fffffb;
+    --YellowRed: #ffc145;
+    --darkBlue: #5b5f97;
+    --wildBlue: #b8b8d1;
+    --text: #262626;
+}
+
+.ease, a, input[type="submit"], header, .search-wrap {
+    	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.logo {
+    margin: 0px;
+    color: var(--primaryRed);
+    font-weight: 300;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+#navWrap li {
+    display: inline-block;
+    padding: 0px 10px;
+    background: black;
+    border: solid white;
+    padding: 7.5px;
+}
+
+header a {
+    font-weight: 400;
+    color: var(--offWhite);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+#menu {
+    width: 100%;
+    z-index: 50 !important;
+
+}
+li{
+    background: var(--offWhite);
+    border: solid black;
+}
+
+
+.overlay {
+    background-color: rgb(0 0 0 / 75%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.overlay-active .overlay {
+    opacity: .75;
+}
+
+.overlay-active form {
+    height: inherit;
+}
+
+.topBar {
+    background-color: #0e0e0e;
+    padding: 8px 0px;
+    text-align: center;
+}
+
+.topBar p {
+    font-weight: 300;
+    margin: 0px;
+    color: #fff;
+    font-size: 1em;
+}
+
+.layer {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.grey {
+    background-color: whitesmoke;
+}
+
+header {
+        padding: 20px 0px;
+    position: fixed;
+    top: 38px;
+    left: 0;
+    right: 0;
+    color: #fff !important;
+    z-index: 999 !important;
+}
+
+.sticky header {
+    background-color: #fff;
+    box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.07);
+    color: var(--text) !important;
+    top: 0px;
+}
+
+
+
+#hero {
+    background-color: black;
+    height: 45vh;
+    min-height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+
+.heroSearch {
+    background-color: rgb(91 95 151 / 90%);;
+    padding: 45px;
+    border-radius: 4px;
+}
+
+#hero h1 {
+    color: #fff;
+}
+
+.searchInputs span {
+    display: block;
+    font-weight: 600;
+    font-size: .75em;
+    color: #fff;
+}
+
+.searchInputs {
+    display: flex;
+    flex-direction: row;
+}
+
+.searchInputs label {
+    padding: 0px 2px;
+}
+
+.searchInputs input, .searchInputs select {
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    color: var(--text);
+    font-weight: 700;
+    outline: none;
+    appearance: none;
+    border: 0.0625rem solid #b2b2bf;
+    height: 45px;
+    width: 100%;
+    min-width: 244px;
+}
+
+.loginPage {
+    height: 100vh;
+    width: 100vw;
+    background-color: green;
+    justify-content: center;
+    background-image: url("./images/loginbck.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.loginPage span {
+    text-align: center;
+    font-weight: 300;
+    display: block;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.loginPage h2 {
+        text-align: center;
+    color: #fff;
+    font-weight: 300;
+    margin-top: 0px;
+    margin-bottom: 30px;
+        font-size: 2.4em;
+}
+
+.loginBox {
+    background-color: rgb(0 0 0 / 70%);
+    padding: 90px 50px;
+    max-width: 400px;
+    margin: 0px auto !important;
+    text-align: left !important;
+    border-radius: 4px;
+}
+
+.loginBox input {
+    width: 100%;
+    padding: 10px;
+    margin: 4px 0px;
+    color: var(--text);
+    font-weight: 300;
+}
+
+.loginBox label {
+    font-weight: 600;
+    color: #fff;
+    font-size: 0.75em;
+}
+
+.loginBox i {
+    text-align: center !important;
+    font-size: 4.35em;
+    color: #fff;
+    display: block;
+}
+
+.loginBox input[type="submit"], .addFlightSubmit {
+    background-color: var(--primaryRed);
+    outline: none;
+    border: 0px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 15px;
+    font-family: 'Open Sans', sans-serif !important;
+    cursor: pointer;
+}
+
+.loginBox input[type="submit"]:hover, #contactForm input[type="submit"]:hover, .addFlightSubmit:hover {
+    background-color: var(--YellowRed);
+}
+
+footer {
+    padding: 25px 0px;
+}
+
+footer #menu li {
+    display: inline-block;
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+footer #menu li a {
+    font-weight: 400;
+    color: var(--text);
+    text-decoration: none;
+}
+
+header #menu li a:hover, footer #menu li a:hover {
+    color: var(--primaryRed);
+}
+
+.search-wrap {
+    height: 0;
+    opacity: 0;
+    z-index: -60;
+}
+
+.search-active .search-wrap {
+    height: 100vh;
+    width: 100vw;
+    opacity: 1;
+    background-color: rgb(255 107 108 / 98%);
+    z-index: 1000 !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.jc-center {
+   justify-content: center !important;
+}
+
+#pageBanner {
+    min-height: 500px;
+    background-color: whitesmoke;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#pageBanner h1 {
+    color: var(--offWhite);
+    font-weight: 700;
+    font-size: 1.9em;
+    margin: 0px;
+    text-transform: capitalize;
+    letter-spacing: -0.5px;
+}
+
+#pageBanner  p {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+#pageBanner p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    font-size: .95em
+}
+
+#pageBanner .overlay {
+    opacity: .65;
+}
+
+.title {
+    margin-bottom: 15px;
+    margin-top: 0px;
+    font-size: 1.6em;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.layer p {
+    margin: 5px;
+    color: var(--text);
+    font-size: 1em;
+    line-height: 28px;
+}
+
+.layer p.intro {
+    font-weight: 700;
+    color: #000;
+    font-size: 1em;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.iconBox h5 {
+    margin: 0px;
+    font-weight: 600;
+    font-size: 1.05em;
+    color: var(--text);
+    letter-spacing: -0.5px;
+    margin-top: 10px;
+}
+
+.iconBox i {
+    color: var(--primaryRed);
+    font-size: 3em;
+}
+
+.iconBox {
+    background: white;
+    padding: 40px;
+    border-radius: 5px;
+    margin: 15px 0px;
+    box-shadow: 1px 1px 6px rgb(0 0 0 / 4%);
+    position: relative;
+}
+
+.layer-title {
+    margin-bottom: 30px;
+}
+
+.layer-title .title {
+    margin-bottom: 0px;
+}
+
+#contactForm input {
+    width: 49.3%;
+    border: 0px;
+    padding: 20px;
+    border-bottom: 2px solid var(--primaryRed);
+}
+
+#contactForm input#contactTextArea {
+    width: 100%;
+    min-height: 400px;
+    margin: 10px 0px;
+}
+
+#contactForm input#fullName {
+    margin-right: 10px;
+}
+
+#contactForm input[type="submit"] {
+    background-color: var(--primaryRed);
+    outline: none;
+    border: 0px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 15px;
+    font-family: 'Open Sans', sans-serif !important;
+    cursor: pointer;
+    width: 100%;
+}
+
+#flightsLists a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+#flightsLists a:hover {
+    color: var(--primaryRed);
+}
+
+#flightsLists .iconBox .overlay {
+    height: 0;
+    transition: .5s ease;
+    background-color: var(--primaryRed);
+}
+
+#flightsLists a:hover .iconBox .overlay {
+    height: 100%;
+}
+
+#flightsLists a:hover .iconBox i, #flightsLists a:hover .iconBox h5 {
+    color: #fff;
+}
+
+.z-container {
+    z-index: 10 !important;
+    position: relative;
+}
+
+.addFlight {
+    background-color: var(--primaryRed);
+    color: #fff;
+    padding: 60px;
+}
+
+.addFlight a {
+background-color: var(--YellowRed);
+    outline: none;
+    border: 0px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 50px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif !important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.addFlight h2 {
+    margin: 0px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.addFlight p {
+    color: #fff;
+    margin: 10px 0px;
+    font-weight: 400;
+}
+
+.addFlight a:hover {
+    background-color: #fff;
+    color: var(--primaryRed);
+}
+
+.addFlightBox {
+    padding: 160px 120px;
+    background-color: #fff;
+    box-shadow: 1px 1px 6px rgb(0 0 0 / 4%);
+    border-radius: 5px;
+}
+
+.addFlightSubmit {
+    margin-top: 30px;
+}
+
+.addFlightBox div {
+    margin: 10px 0px;
+}
+
+.flightDetails {
+    background-color: #ffffff;
+    box-shadow: 1px 1px 12px rgb(0 0 0 / 10%);
+    color: #fff;
+    margin: 0px;
+    padding: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.flightDetails div span {
+    display: block;
+    font-weight: 700;
+    color: var(--primaryRed);
+    text-transform: uppercase;
+    font-size: 0.75em;
+}
+
+.flightDetails div p {
+    color: var(--text);
+    font-weight: 400;
+    font-size: .95em;
+}
+
+.crew-image {
+    background: #fff;
+    min-height: 350px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 12px rgb(0 0 0 / 10%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0px;
+    margin: 15px 0px;
+}
+
+.crew-image h5 {
+    margin: 0px;
+    font-weight: 400;
+    color: var(--primaryRed);
+    font-size: 1.45em;
+}
